@@ -6,12 +6,13 @@ let intervalId = null;
 function onChangeColor() {
   intervalId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
-    startButtonEl.classList.add("disabled")
+    startButtonEl.setAttribute("disabled", "disabled")
   }, 1000);
 };
 
 function onStopChangeColor() {
   clearInterval(intervalId);
+  startButtonEl.removeAttribute("disabled")
 }
 
 function getRandomHexColor() {
