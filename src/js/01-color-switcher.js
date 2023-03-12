@@ -21,3 +21,4 @@ function getRandomHexColor() {
 
 startButtonEl.addEventListener('click', onChangeColor);
 stopButtonEl.addEventListener('click', onStopChangeColor)
+
